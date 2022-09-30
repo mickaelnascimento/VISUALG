@@ -12,7 +12,7 @@ Algoritmo "EXERCICIO PARES CONSECUTIVOS"
 Var
 
 
- a,b,c,d,x,soma : inteiro
+ x,soma : inteiro
 
 
 Inicio
@@ -20,27 +20,14 @@ Inicio
   escreva("Digite um numero inteiro: ")
   leia(x)
   enquanto x<>0 faca
-  se x mod 2 = 0 entao
-  a <- x+2
-  b <- a+2
-  c <- b+2
-  d <- c+2
+  se x mod 2 <> 0 entao
+    x <- x+1
+  fimse
   
-  soma <- a+b+c+d+x
+  soma <- 5*x+20
   Escreval("SOMA= ",soma)
   escreva("Digite um numero inteiro: ")
   leia(x)
-  senao
-    x <-x+1
-    a <- x+2
-    b <- a+2
-    c <- b+2
-    d <- c+2
-    soma <- a+b+c+d+x
-    Escreval("SOMA= ",soma)
-    escreva("Digite um numero inteiro: ")
-    leia(x)
-  fimse
   fimenquanto
   
 
