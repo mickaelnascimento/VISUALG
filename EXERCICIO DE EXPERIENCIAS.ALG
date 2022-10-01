@@ -49,21 +49,22 @@ Inicio
  leia(x)
  
  se (x="c") entao
- c <- c+q
+   c <- c+q
+   total <-total+q
  senao
- se (x="r") entao
- r <- r+q
- senao
- se (x="s") entao
- s <- s+q
- senao
- escreval("resposta invalida, tente R para Rato, S para Sapo e C para Coelho")
- n <- n-1
- total <-total-q
+   se (x="r") entao
+     r <- r+q
+     total <-total+q
+   senao
+     se (x="s") entao
+       s <- s+q
+       total <-total+q
+     senao
+       escreval("resposta invalida, tente R para Rato, S para Sapo e C para Coelho")
+       n <- n-1
+     fimse
+   fimse
  fimse
- fimse
- fimse
- total <-total+q
  fimpara
  escreval
  
